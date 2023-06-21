@@ -1,0 +1,80 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(right, hsl(0, 0%, 100%), hsl(0, 1%, 44%));
+    height: 100vh;
+
+}
+
+.ageCalculator {
+     background-color: chocolate; 
+    border: 1px solid; 
+    border-radius: 0 0 130px 0;
+    height: 50%;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 40px;
+    position: relative;
+
+    
+
+
+
+}
+
+.dateInput {
+
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 40px;
+
+}
+
+.date {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+label {
+    color: hsl(0, 1%, 44%);
+    font-size: small;
+}
+
+input {
+    border: 2px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    height: 55px;
+    width: 135px;
+
+}
+
+.arrow {
+    margin-top: 2%;
+    display: inline;
+
+
+}
+
+hr {
+    width: 90%;
+}
+
