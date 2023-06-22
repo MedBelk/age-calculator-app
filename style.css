@@ -5,11 +5,12 @@
     box-sizing: border-box;
     text-decoration: none;
 
-    input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
+   
     }
-}
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;}
 
 body {
     display: flex;
@@ -69,12 +70,19 @@ input {
 
 .arrow {
     margin-top: 2%;
-    display: inline;
-
+    display: flex;
 
 }
 
 hr {
-    width: 90%;
-}
+    width: 85%;
 
+}
+#icon-arrow{
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 3px;
+
+
+    
+}
