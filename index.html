@@ -18,18 +18,20 @@
 <body>
 
   <div class="ageCalculator">
+
     <div class="dateInput">
+
       <div class="date">
         <label for="">DAY</label>
-        <input type="number" name="" id="">
+        <input type="number" name="" id="day">
       </div>
       <div class="date">
         <label for="">MONTH</label>
-        <input type="number" name="" id="">
+        <input type="number" name="" id="month">
       </div>
       <div class="date">
         <label for="">YEAR</label>
-        <input type="number" name="" id="">
+        <input type="number" name="" id="year">
       </div>
 
 
@@ -37,10 +39,16 @@
 
     </div>
     <div class="arrow">
-      <hr>
-      <img src="./assets/images/icon-arrow.svg" alt="" id="icon-arrow">
+      <hr id="line">
+      <button class="arrowbg" onclick="calcul()"></button>
+
     </div>
-    
+    <div class="text">
+      <h1 id="yearInput"></h1>
+      <h1 id="monthInput"></h1>
+      <h1 id="dayInput"></h1>
+
+    </div>
 
 
 
@@ -50,7 +58,7 @@
 
   </div>
 
-
+  <script src="script.js"></script>
 </body>
 
 </html>
