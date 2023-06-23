@@ -1,25 +1,21 @@
-
-
-
-
-// console.log(`${myDay} , ${myMonth} , ${myYear}`);
-
-
-
-
 function calcul() {
-    var myDay = document.getElementById("day").value;
-    var myMonth = document.getElementById("month").value;
-    var myYear = document.getElementById("year").value;
+  var myDay = parseInt(document.getElementById("day").value);
+  var myMonth = parseInt(document.getElementById("month").value);
+  var myYear = parseInt(document.getElementById("year").value);
 
-    let date = new Date(myYear, myMonth - 1, myDay);
-    let diffDate = new Date() - date;
+  var currentDate = new Date();
+  var inputDate = new Date(myYear, myMonth - 1, myDay);
 
-    var y = Math.floor(diffDate / (1000 * 3600 * 24 * 30 * 12));
-    var m = Math.floor((diffDate % (1000 * 3600 * 24 * 30 * 12)) / (1000 * 3600 * 24 * 30));
-    var d = Math.floor((m % (1000 * 3600 * 24 * 30)) / (1000 * 3600 * 24));
+  var diffDate = currentDate - inputDate;
+  const oneYear = 1000 * 3600 * 24 * 30 * 12;
+  const oneMonth = 1000 * 3600 * 24 * 30;
+  const oneDay = 1000 * 3600 * 24;
 
-    document.getElementById("yearInput").innerHTML = y;
-    document.getElementById("monthInput").innerHTML = m;
-    document.getElementById("dayInput").innerHTML = d;
-  }
+  var y = Math.floor(diffDate / oneYear);
+  var m = Math.floor((diffDate % oneYear) / oneMonth);
+  var d = Math.floor(((diffDate % oneYear) % oneMonth) / oneDay);
+
+  document.getElementById("yearInput").innerHTML = y;
+  document.getElementById("monthInput").innerHTML = m;
+  document.getElementById("dayInput").innerHTML = d;
+}
