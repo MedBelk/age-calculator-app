@@ -114,6 +114,7 @@ input:hover {
 .text {
     font-size: 32px;
     height: 40%;
+    font-style: italic;
 }
 
 .text .numbers {
@@ -149,7 +150,7 @@ input:hover {
     
     }
    input{
-
+font-size: 18px;
     height: 45px;
     width: 80px;
    }
@@ -162,7 +163,7 @@ input:hover {
 }
    .arrowbg {
 
-    height: 55px;
+    height: 60px;
     width: 60px;
  position: absolute;
 left: 38%;
@@ -173,7 +174,7 @@ left: 38%;
     
 
     .text {
-        font-size: 24px;
+        font-size: 25px;
         font-weight: 800;
         font-style: italic;
     }
