@@ -23,15 +23,15 @@
 
       <div class="date">
         <label for="">DAY</label>
-        <input type="number" name="" id="day" placeholder="DD">
+        <input type="number" min="1" max="31" name="" id="day" placeholder="DD">
       </div>
       <div class="date">
         <label for="">MONTH</label>
-        <input type="number" name="" id="month" placeholder="MM">
+        <input onchange="rerender(this)" min="1" max="12" type="number" name="" id="month" placeholder="MM">
       </div>
       <div class="date">
         <label for="">YEAR</label>
-        <input type="number" name="" id="year" placeholder="YYYY">
+        <input onchange="rerender(this)" type="number" name="" min="1900" id="year"  placeholder="YYYY">
       </div>
 
 
@@ -45,9 +45,9 @@
 
     </div>
     <div class="text">
-      <h1 id="yearInput"></h1>
-      <h1 id="monthInput"></h1>
-      <h1 id="dayInput"></h1>
+      <h1 id="yearInput"><span class="numbers">- -</span> years</h1>
+      <h1 id="monthInput"><span class="numbers" >- -</span> months</h1>
+      <h1 id="dayInput"><span class="numbers">- -</span> days</h1>
 
     </div>
 
