@@ -7,17 +7,17 @@ function calcul() {
   var myMonth = parseInt(document.getElementById("month").value);
   var myYear = parseInt(document.getElementById("year").value);
   var currentDate = new Date();
-  var inputDate = new Date(myYear, myMonth - 1, myDay);
+  var inputDate = new Date(myYear, myMonth , myDay);
 
   var diffDate = currentDate - inputDate;
-  const oneYear = 1000 * 3600 * 24 * 30 * 12;
-  const oneMonth = 1000 * 3600 * 24 * 30;
+  const oneYear = 1000 * 3600 * 24 * 30.4375 * 12;
+  const oneMonth = 1000 * 3600 * 24 * 30.4375;
   const oneDay = 1000 * 3600 * 24;
-
-  var y = Math.floor(diffDate / oneYear);
+console.log('diff dqy is ',diffDate)
+  var y = Math.ceil(diffDate / oneYear);
   var m = Math.floor((diffDate % oneYear) / oneMonth);
   var d = Math.floor(((diffDate % oneYear) % oneMonth) / oneDay);
-
+  console.log(diffDate / oneYear, ((diffDate % oneYear) / oneMonth) ,((diffDate % oneYear) % oneMonth) / oneDay) ;
   document.getElementsByTagName("span")[0].innerHTML = y;
   document.getElementsByTagName("span")[1].innerHTML = m;
   document.getElementsByTagName("span")[2].innerHTML = d;
